@@ -1,0 +1,1188 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1480px;
+  margin: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Margin Variables*/
+/* Padding Variables*/
+/* Float's*/
+/* Text Aligment's*/
+/* Text Decoration*/
+/* Display */
+/* Vertical Align */
+/* Position  */
+/* visibility  */
+/* Opacity */
+/* List Style none */
+/* Font Weight*/
+/* Font Style*/
+/* Cursor*/
+/* Text Transform*/
+/*Line Height*/
+/*Width*/
+/*Height*/
+/*Border Zero*/
+/*letter spacing Zero*/
+/*Font Size's*/
+/*Over flow*/
+/*white space*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --brand-yellow: #ffa319;
+  --light-yeelow: #fff6e8;
+  --border-color: #BBB5C2;
+  --red: #ff1943;
+  --red-light: #ffe8ec;
+  --blue: #1A75FF;
+  --light-blue: #F6F8FB;
+  --span-color: #CCCEDD;
+  --left-penal-shadow: 3px 0px 4px 0px rgba(239, 239, 239, 0.50), 0px 4px 3px 0px #CCCEDD;
+  --right-penal-back: #F6F8FB;
+  --right-penal-header-shadow: 0px 2px 3px 0px #EFEFEF, 0px 4px 5px 0px #EFEFEF;
+  --new-blue: #000C57;
+  --new-blue-light: #6E759F;
+  --left-penal-blue: #242e6f;
+  --green: #44D600;
+  --light-green: #ecfbe6;
+  --green-shadow: 0px 3px 12px 2px rgba(68, 214, 0, 0.35), 0px 1px 4px 0px rgba(68, 214, 0, 0.25);
+  --account-balance-shadow: 0px 2px 2px 0px rgba(159, 162, 191, 0.32), 0px 9px 16px 0px rgba(159, 162, 191, 0.18);
+  --left-p-shadow: 0px 2px 2px 0px rgba(159, 162, 191, 0.32), 0px 9px 16px 0px rgba(159, 162, 191, 0.18);
+  --box-shadow: 3px 0px 4px 0px rgba(239, 239, 239, 0.50);
+  --border-color: #d0d6df;
+  --gray: #727476;
+  --color: #a7adbb;
+  --background: #ebeef1;
+  --input-color: #e5e6ee;
+}
+
+/*Fonts family Roboto*/
+/*Fonts family Rupee */
+/*Fonts family Lato */
+.all-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all-page .left-penal-background {
+  background: #fff;
+  width: 20%;
+  height: 100vh;
+  padding: 0 22px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.all-page .left-penal-background .left-penal {
+  width: 100%;
+}
+.all-page .left-penal-background .left-penal .Purchase-now a {
+  font-size: 16px;
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 500;
+  padding: 13px 35px;
+  border-radius: 6px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li {
+  background: var(--white);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+.all-page .left-penal-background .left-penal .overview > ul > li:nth-child(2) {
+  background: var(--light-blue);
+}
+.all-page .left-penal-background .left-penal .overview > ul > li:nth-child(2) h3 {
+  color: var(--blue);
+}
+.all-page .left-penal-background .left-penal .overview > ul > li h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--left-penal-blue);
+}
+.all-page .left-penal-background .left-penal .overview > ul > li h3 img {
+  width: 24px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li a img {
+  width: 24px;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li ul {
+  position: absolute;
+  background: var(--white);
+  width: 250px;
+  z-index: 1;
+  left: 0;
+  top: 44px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(2%);
+          transform: translateY(2%);
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li ul li {
+  padding: 10px 35px;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li ul li p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.all-page .left-penal-background .left-penal .overview > ul > li ul li p:hover {
+  color: var(--blue);
+}
+.all-page .left-penal-background .left-penal .overview > ul span {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  color: var(--span-color);
+}
+.all-page .right-penal-background {
+  background: var(--right-penal-back);
+  width: 80%;
+}
+.all-page .right-penal-background .right-penal {
+  width: 100%;
+}
+.all-page .right-penal-background .right-penal .right-penal-header {
+  background: var(--white);
+  -webkit-box-shadow: var(--right-penal-header-shadow);
+          box-shadow: var(--right-penal-header-shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul li {
+  padding: 0 15px;
+  position: relative;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul li a img {
+  width: 24px;
+  vertical-align: middle;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul li:first-child a {
+  color: var(--black);
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-left ul li:first-child a::after {
+  position: absolute;
+  background: var(--blue);
+  height: 4px;
+  width: 30px;
+  content: "";
+  border-radius: 50px;
+  left: 16px;
+  top: 22px;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li {
+  padding: 0 15px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:hover a {
+  background: var(--right-penal-back);
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li a {
+  background: var(--white);
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:last-child a {
+  background: none;
+  padding: 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:nth-child(4) img {
+  width: 60px;
+  height: 60px;
+  padding-right: 10px;
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:nth-child(4) h4 {
+  font-size: 14px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-header .header-right ul li:nth-child(4) p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  padding: 4px 0;
+  width: 50%;
+}
+.all-page .right-penal-background .right-penal .right-penal-body {
+  margin: 0 25px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .hello {
+  padding: 25px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .hello h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .hello p {
+  font-size: 17px;
+  color: var(--new-blue-light);
+  padding: 10px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background {
+  background: var(--white);
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  border-radius: 6px;
+  padding: 30px 25px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance {
+  width: 100%;
+  border-right: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--new-blue);
+  padding-bottom: 30px;
+  display: inline-block;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance h2 {
+  font-size: 35px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance p {
+  color: var(--new-blue-light);
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month .this-month-image {
+  background: var(--green);
+  padding: 8px;
+  border-radius: 6px;
+  -webkit-box-shadow: var(--green-shadow);
+          box-shadow: var(--green-shadow);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month .this-month-image img {
+  width: 36px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month .this-month-text {
+  padding-left: 12px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month .this-month-text h3 {
+  font-size: 21px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance .this-month .this-month-text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance ul li a {
+  font-size: 15px;
+  color: var(--blue);
+  font-weight: 700;
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 8px 80px;
+  margin-right: 20px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance ul li:hover a {
+  background: var(--blue);
+  color: var(--white);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .crcile {
+  height: 160px;
+  width: 160px;
+  background: var(--white);
+  border-radius: 50%;
+  border: 22px solid var(--green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 190px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin img {
+  width: 42px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin .btc-text {
+  padding-left: 6px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin .btc-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin .btc-text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin-right {
+  text-align: right;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin-right h4 {
+  font-size: 18px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li .btc-bitcoin-right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li:last-child .btc-bitcoin-right p {
+  color: var(--red);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .account-balance-background .account-balance-all-section .account-balance-right .btc-bitcoin-section ul li:nth-child(2) .btc-bitcoin-right p {
+  color: var(--red);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal {
+  width: 65%;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal .wallets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal .wallets h2 {
+  font-size: 21px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal .wallets a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 6px;
+  padding: 8px 15px;
+  display: inline-block;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal .wallets a:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li {
+  background: var(--white);
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  border-radius: 6px;
+  width: 100%;
+  padding: 20px;
+  margin-right: 25px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li img {
+  width: 42px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--new-blue);
+  padding-top: 13px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--new-blue);
+  padding-top: 42px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li:last-child {
+  text-align: center;
+  padding-top: 82px;
+  margin: 0;
+  border: dashed 1px var(--blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li:last-child .add-icon {
+  background: var(--light-blue);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  padding-top: 19px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-left-penal ul li:last-child .add-icon a img {
+  width: 42px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal {
+  background: var(--white);
+  border-radius: 6px;
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  width: 35%;
+  margin: 27px 0 0 25px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal h2 {
+  font-size: 20px;
+  color: var(--new-blue);
+  font-weight: 700;
+  padding: 20px 17px;
+  border-bottom: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 17px;
+  border-bottom: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li:nth-child(2) .lock-disabled .lock-image {
+  background: var(--light-green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li:nth-child(2) .lock-disabled .disabled p {
+  color: var(--green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li:last-child {
+  border: none;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li:last-child .lock-disabled .lock-image {
+  background: var(--light-yeelow);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li:last-child .lock-disabled .disabled p {
+  color: var(--brand-yellow);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled .lock-image {
+  background: var(--red-light);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 50%;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled .lock-image img {
+  width: 24px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled .disabled {
+  padding-left: 16px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled .disabled h2 {
+  font-size: 20px;
+  color: var(--new-blue);
+  padding: 0;
+  border: none;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .lock-disabled .disabled p {
+  font-size: 18px;
+  color: var(--red);
+  font-weight: 400;
+  padding-top: 4px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: var(--input-color);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  background: var(--blue);
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input input:checked + label {
+  background: var(--input-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input label:active:after {
+  width: 130px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .wallets-all-section .wallets-right-penal ul li .wallets-input body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background {
+  background: var(--white);
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  border-radius: 6px;
+  margin-top: 27px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 20px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders .recent-search {
+  position: relative;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders .recent-search .recent-search-image {
+  position: absolute;
+  top: 17%;
+  left: 7px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders .recent-search .recent-search-image img {
+  width: 24px;
+  vertical-align: middle;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .recent-orders .recent-search input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid var(--gray);
+  background: transparent;
+  padding-left: 32px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 20px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li:first-child {
+  background: var(--light-blue);
+  border-bottom: none;
+  border-top: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li h3 {
+  font-size: 14px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li h4 {
+  font-size: 15px;
+  color: var(--new-blue);
+  padding-left: 70px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section .trending-image {
+  background: var(--light-green);
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section .trending-image img {
+  width: 24px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section .fiat-deposit {
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section .fiat-deposit h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .fait-section .fiat-deposit p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  font-weight: 400;
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .deposit-section h3 {
+  font-size: 17px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .deposit-section .deposit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .deposit-section .deposit .deposit-crcile {
+  background: var(--green);
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .deposit-section .deposit p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--green);
+  padding-left: 4px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .bank-account h3 {
+  font-size: 17px;
+  color: var(--new-blue);
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .bank-account p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .amount h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .amount p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .balance h3 {
+  font-size: 17px;
+  color: var(--new-blue);
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .balance p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  font-weight: 400;
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .status span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  background: var(--light-green);
+  padding: 7px;
+  border-radius: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .actions a {
+  padding-left: 7px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background > ul > li .actions a img {
+  font-size: 18px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .keyborad ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .keyborad ul li {
+  padding: 20px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .keyborad ul li:hover h3 {
+  color: var(--white);
+  background: var(--blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .keyborad ul li h3 {
+  font-size: 16px;
+  color: var(--new-blue);
+  background: var(--light-blue);
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 6px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .recent-orders-background .keyborad ul li a img {
+  width: 24px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list h2 {
+  font-size: 21px;
+  color: var(--new-blue);
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list .watch-image > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list .watch-image > ul > li:last-child a {
+  background: var(--white);
+  border-color: var(--border-color);
+  border-radius: 0 6px 6px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list .watch-image > ul > li a {
+  background: var(--blue);
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  display: inline-block;
+  border: 1px solid var(--blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section .watch-list .watch-image > ul > li a img {
+  width: 24px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li {
+  background: var(--white);
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  border-radius: 6px;
+  width: calc(33% - 20px);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li:first-child .watch-list-all-text .bitcoin-text p {
+  color: var(--green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li:first-child .watch-list-all-text .last-text span {
+  color: var(--green);
+  background: var(--light-green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text {
+  padding: 20px 0 0 20px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-image img {
+  width: 35px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-image .bitcoin {
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-image .bitcoin h4 {
+  font-size: 16px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-image .bitcoin p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  font-weight: 400;
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .bitcoin-text p {
+  font-size: 14px;
+  color: var(--red);
+  font-weight: 700;
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .last-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .last-text span {
+  font-size: 14px;
+  color: var(--red);
+  background: var(--red-light);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .watch-list-all-text .last-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--new-blue-light);
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section > ul > li .ghraf-image img {
+  width: 100%;
+  height: 160px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list h2 {
+  font-size: 21px;
+  color: var(--new-blue);
+  font-weight: 700;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list .watch-image > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list .watch-image > ul > li:last-child a {
+  background: var(--white);
+  border-color: var(--border-color);
+  border-radius: 0 6px 6px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list .watch-image > ul > li a {
+  background: var(--blue);
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  display: inline-block;
+  border: 1px solid var(--blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .watch-list .watch-image > ul > li a img {
+  width: 24px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card {
+  background: var(--white);
+  border-radius: 6px;
+  -webkit-box-shadow: var(--account-balance-shadow);
+          box-shadow: var(--account-balance-shadow);
+  margin-bottom: 100px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li {
+  width: 33.33%;
+  padding: 20px 20px 0 20px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li:first-child {
+  border-bottom: none;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li:first-child .watch-list-all-text .bitcoin-text-left .bitcoin-text p {
+  color: var(--green);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li:last-child {
+  border-right: none;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-image img {
+  width: 35px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-image .bitcoin {
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-image .bitcoin h4 {
+  font-size: 16px;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-image .bitcoin p {
+  font-size: 14px;
+  color: var(--new-blue-light);
+  font-weight: 400;
+  padding-top: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28px 0 18px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--new-blue);
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .bitcoin-text-left .bitcoin-text p {
+  font-size: 14px;
+  color: var(--red);
+  font-weight: 700;
+  padding-left: 8px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card > ul > li .watch-list-all-text .last-text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color);
+  background: var(--background);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card .view-assets {
+  text-align: center;
+  padding: 24px 0;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card .view-assets a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 10px 15px;
+  display: inline-block;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.all-page .right-penal-background .right-penal .right-penal-body .watch-list-section-end .list-end-card .view-assets a:hover {
+  color: var(--white);
+  background: var(--blue);
+}
